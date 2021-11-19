@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CassandraToAzureFiles", "CassandraToAzureFiles.csproj", "{590D5FD4-FA9F-474B-B5FE-51A2738B9E1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{590D5FD4-FA9F-474B-B5FE-51A2738B9E1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{590D5FD4-FA9F-474B-B5FE-51A2738B9E1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{590D5FD4-FA9F-474B-B5FE-51A2738B9E1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{590D5FD4-FA9F-474B-B5FE-51A2738B9E1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F708637-2A9A-4484-99D2-69C108C752A0}
+	EndGlobalSection
+EndGlobal

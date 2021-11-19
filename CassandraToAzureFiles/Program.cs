@@ -6,6 +6,12 @@ using System.Text.Json;
 Console.WriteLine("Enter full path to your Cassandra File");
 string fileContents = String.Empty;
 string filepath = Console.ReadLine().Trim();
+Console.WriteLine("Enter server name");
+string serverName = Console.ReadLine().Trim();
+Console.WriteLine("Enter Key Space name");
+string keySpace = Console.ReadLine().Trim();
+Console.WriteLine("Enter Resource Group name");
+string resourceGroup = Console.ReadLine().Trim();
 try
 {
     using (var sr = new StreamReader(filepath))
@@ -73,9 +79,9 @@ foreach (CassandraTableModel table in azTables)
         byte[] info = new UTF8Encoding(true).GetBytes(jsondata);
         fs.Write(info, 0, info.Length);
     }
-    powershell += "az cosmosdb cassandra table update" +
-        " --account-name codingflamingotestserver --keyspace-name testkeyspace" +
-        $" --name {table.Name} --resource-group cosmosTest --schema '@{table.Name}.json' \n";
+    powershell += "az cosmosdb cassandra table create" +
+        $" --account-name {serverName} --keyspace-name {keySpace}" +
+        $" --name {table.Name} --resource-group {resourceGroup} --schema '@{table.Name}.json' \n";
 }
 using (FileStream fs = File.Create("output\\createTables.ps1"))
 {
