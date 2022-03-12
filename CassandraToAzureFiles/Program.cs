@@ -8,10 +8,10 @@ string fileContents = String.Empty;
 string filepath = Console.ReadLine().Trim();
 Console.WriteLine("Enter server name");
 string serverName = Console.ReadLine().Trim();
-Console.WriteLine("Enter Key Space name");
-string keySpace = Console.ReadLine().Trim();
 Console.WriteLine("Enter Resource Group name");
 string resourceGroup = Console.ReadLine().Trim();
+Console.WriteLine("Enter Key Space name");
+string keySpace = Console.ReadLine().Trim();
 try
 {
     using (var sr = new StreamReader(filepath))
